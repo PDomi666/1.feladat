@@ -41,4 +41,11 @@ router.get('/testsql', async (request, response) => {
     }
 });
 
+router.post('/api/saveData', async(request, response) =>{
+    const key = request.body;
+    response.status(200).json({
+        message: 'Sikeres mentés'
+    });
+});
+
 module.exports = router;
